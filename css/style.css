@@ -1,0 +1,43 @@
+main {
+  height: calc( 100vh - 100px );
+  width: 100%;
+  /* overflow: scroll; */
+}
+
+nav {
+  height: 100%;
+  width: 300px;
+  background-color: black;
+  float: left;
+}
+
+section {
+  height: 100%;
+  width: calc( 100% - 300px );
+  background-color: #141922;
+  float: left;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #282828;
+
+}
+
+.ms_fixed_part {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 80px;
+  width: calc( 100% - 300px );
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.ms_main_content {
+  font-size: 40px;
+  height: 100%;
+  overflow: scroll;
+}
