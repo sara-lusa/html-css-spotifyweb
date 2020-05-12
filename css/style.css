@@ -4,6 +4,14 @@
   box-sizing: border-box;
 } */
 
+/* .clearfix {
+  content: '';
+  display: table;
+  clear: both;
+} */
+
+
+/* REGOLE GENERALI */
 body {
 font-family: 'Roboto', sans-serif;
 }
@@ -12,12 +20,19 @@ ul {
   list-style-type: none;
 }
 
-/* .clearfix {
-  content: '';
-  display: table;
-  clear: both;
-} */
+a {
+  color: inherit;
+}
 
+.flex-container {
+  display: flex;
+}
+/* FINE REGOLE GENERALI */
+
+/* COMPONENTI */
+/* FINE COMPONENTI */
+
+/* MAIN */
 main {
   height: calc( 100vh - 100px );
   width: 100%;
@@ -31,6 +46,19 @@ nav {
   position: relative;
   color: white;
   overflow-y: hidden;
+}
+
+.ms_list {
+  overflow-y: auto;
+  min-height: 60px;
+  height: calc( 100% - 143px );
+}
+
+.ms_name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
 }
 
 section {
@@ -57,31 +85,13 @@ section {
   height: 100%;
   overflow: scroll;
 }
+/* FINE MAIN */
 
-.ms_list {
-  overflow-y: auto;
-  min-height: 60px;
-  height: calc( 100% - 143px );
-}
-
-.ms_name {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50px;
-}
-
+/* FOOTER */
 footer {
   height: 100px;
   width: 100%;
   background-color: #282828;
 }
 
-/* .flex-container {
-  display: flex;
-}
-
-.flex-container.navbar {
-  flex-direction: column;
-  flex-wrap: wrap;
-} */
+/* FINE FOOTER */
