@@ -30,7 +30,7 @@ nav {
   float: left;
   position: relative;
   color: white;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 
 section {
@@ -61,13 +61,14 @@ section {
 .ms_list {
   overflow-y: auto;
   min-height: 60px;
-  
+  height: calc( 100% - 143px );
 }
 
 .ms_name {
   position: absolute;
   bottom: 0;
   left: 0;
+  height: 50px;
 }
 
 footer {
