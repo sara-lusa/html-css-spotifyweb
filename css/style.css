@@ -9,6 +9,8 @@ nav {
   width: 300px;
   background-color: black;
   float: left;
+  position: relative;
+  color: white;
 }
 
 section {
@@ -40,4 +42,15 @@ footer {
   font-size: 40px;
   height: 100%;
   overflow: scroll;
+}
+
+.ms_list {
+  overflow: scroll;
+  min-height: 20px;
+}
+
+.ms_name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
