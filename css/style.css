@@ -18,7 +18,7 @@ font-family: 'Roboto', sans-serif;
 
 ul {
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 a {
@@ -38,6 +38,10 @@ a {
 /* FINE COMPONENTI */
 
 /* MAIN */
+main, footer {
+  min-width: 500px;
+}
+
 main {
   height: calc( 100vh - 100px );
   width: 100%;
@@ -49,13 +53,13 @@ nav {
   width: 300px;
   background-color: black;
   float: left;
-  position: relative;
   color: #6d6d6d;
   overflow-y: hidden;
+  padding: 0 20px;
 }
 
 .ms_logo {
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .ms_logo img {
@@ -64,7 +68,6 @@ nav {
 
 h4 {
   text-transform: uppercase;
-  padding-left: 20px;
   font-size: 14px;
 }
 
@@ -77,16 +80,16 @@ nav li {
   font-size: 13px;
 }
 
-.ms_list {
-  overflow-y: auto;
-  min-height: 60px;
-  height: calc( 100% - 313px );
-  text-transform: capitalize;
+.ms_menu_playlist {
+  height: calc( 100% - 300px );
+  overflow: hidden;
 }
 
-.ms_list li:first-child {
+.ms_menu_playlist .ms_plus_link {
   font-size: 15px;
   line-height: 35px;
+  display: inline-block;
+  padding-bottom: 15px;
 }
 
 .ms_plus_sign {
@@ -100,11 +103,15 @@ nav li {
   color: black;
 }
 
+.ms_list {
+  overflow-y: auto;
+  min-height: 60px;
+  text-transform: capitalize;
+  height: calc( 100% - 67px)
+}
+
 .ms_name {
   width: 90%;
-  position: absolute;
-  bottom: 0px;
-  left: 20px;
   background-color: black;
   height: 90px;
   padding: 10px 0;
@@ -143,7 +150,7 @@ hr {
 }
 
 .ms_name.ms_logos {
-  left: 5px;
+  /* left: 5px; */
 }
 
 .ms_name.ms_logos a:first-child img {
@@ -153,6 +160,7 @@ hr {
 .ms_name.ms_logos a:last-child img {
   width: 40px;
   height: 40px;
+  padding: 0;
 }
 
 /* Section-Main */
