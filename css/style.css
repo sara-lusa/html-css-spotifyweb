@@ -103,6 +103,7 @@ nav li {
 .ms_menu_nav li:first-child {
   border-left: 3px solid #acff30;
 }
+
 /* Menu-Playlist */
 h4 {
   text-transform: uppercase;
@@ -180,15 +181,11 @@ hr {
   padding: 10px 5px;
 }
 
-.ms_name.ms_logos {
-  margin-bottom: 15px;
-}
-
-.ms_name.ms_logos a:first-child img {
+.ms_avatar.ms_logos a:first-child img {
   width: 30px;
 }
 
-.ms_name.ms_logos a:last-child img {
+.ms_avatar.ms_logos a:last-child img {
   width: 35px;
   height: 35px;
   padding: 0;
@@ -246,6 +243,10 @@ section {
     padding: 0;
   }
 
+  .flex-item:not(.ms_menu_nav) {
+    padding: 0px;
+  }
+
   section {
     width: calc( 100% - 60px );
   }
@@ -253,6 +254,7 @@ section {
   .ms_fixed_bar {
     width: calc( 100% - 60px );
   }
+
 }
 /* Fine Media Query Main */
 
