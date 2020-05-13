@@ -55,9 +55,14 @@ nav {
   float: left;
   color: #6d6d6d;
   overflow-y: hidden;
-  padding: 0 20px;
 }
 
+nav li {
+  padding: 7px 0;
+  font-size: 13px;
+}
+
+/* Flex-Items */
 .ms_navbar .flex-container {
   flex-direction: column;
   height: 100%;
@@ -67,11 +72,16 @@ nav {
   flex-shrink: 0;
 }
 
+.flex-item:not(.ms_menu_nav) {
+  padding: 10px 20px;
+}
+
 .flex-item.ms_menu_playlist,
 .flex-item.ms_logos:first-child {
   flex-grow: 1;
 }
 
+/* Logo */
 .ms_logo {
   padding: 15px 0;
 }
@@ -80,18 +90,23 @@ nav {
   width: 60%;
 }
 
-h4 {
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
+/* Menu-Nav */
 .ms_menu_nav img {
   width: 10%;
 }
 
-nav li {
-  padding-bottom: 15px;
-  font-size: 13px;
+.ms_menu_nav li {
+  padding-left: 20px;
+  border-left: 3px solid black;
+}
+
+.ms_menu_nav li:first-child {
+  border-left: 3px solid #acff30;
+}
+/* Menu-Playlist */
+h4 {
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .ms_menu_playlist {
@@ -124,22 +139,23 @@ nav li {
   height: calc( 100% - 67px)
 }
 
-.ms_name {
+/* Avatar */
+.ms_avatar {
   width: 90%;
   background-color: black;
   height: 90px;
   padding: 10px 0;
 }
 
-.ms_name img {
+.ms_avatar img {
   margin-right: 5px;
 }
 
-.ms_name a:first-child img {
+.ms_avatar a:first-child img {
   width: 5%;
 }
 
-.ms_name a:last-child img {
+.ms_avatar a:last-child img {
   width: 27px;
   height: 27px;
   vertical-align: middle;
