@@ -103,13 +103,52 @@ nav li {
 .ms_name {
   width: 90%;
   position: absolute;
-  bottom: 5px;
-  left: 10px;
-  height: 50px;
+  bottom: 7px;
+  left: 20px;
 }
 
-.ms_name a img:first-child {
+.ms_name img {
+  margin-right: 5px;
+}
+
+.ms_name a:first-child img {
   width: 5%;
+}
+
+.ms_name a:last-child img {
+  width: 27px;
+  height: 27px;
+  vertical-align: middle;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+hr {
+  color: #6d6d6d;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.ms_logos {
+  text-align: center;
+}
+
+.ms_logos img {
+  width: 70%;
+  padding: 10px 5px;
+}
+
+.ms_name.ms_logos {
+  left: 5px;
+}
+
+.ms_name.ms_logos a:first-child img {
+  width: 50%;
+}
+
+.ms_name.ms_logos a:last-child img {
+  width: 40px;
+  height: 40px;
 }
 /* Section-Main */
 section {
@@ -152,6 +191,22 @@ section {
   overflow: scroll;
 }
 /* FINE MAIN */
+
+/* Inizio Media Query Main */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 60px;
+  }
+
+  section {
+    width: calc( 100% - 60px );
+  }
+
+  .ms_fixed_bar {
+    width: calc( 100% - 60px );
+  }
+}
+/* Fine Media Query Main */
 
 /* FOOTER */
 footer {
