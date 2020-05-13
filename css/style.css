@@ -291,7 +291,7 @@ section {
   font-size: 1.2em;
 }
 
-.ms_main_playlists .flex-item .ms_artist {
+.ms_main_playlists .ms_artist {
   color: #62646a;
 }
 
@@ -301,6 +301,14 @@ section {
 
 .ms_main_playlists .flex-container.ms_main_two .flex-item {
   margin-right: 35px;
+}
+
+.ms_main_playlists > .ms_artist {
+  padding-left: 20px;
+}
+
+.ms_main_playlists .flex-container.ms_main_two:last-child img {
+  border-radius: 50%;
 }
 /* FINE MAIN */
 
