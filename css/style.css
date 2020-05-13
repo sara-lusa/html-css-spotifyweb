@@ -272,14 +272,15 @@ section {
   height: 100%;
   padding: 0 20px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .ms_main_playlists .flex-item {
   text-align: center;
-  width: calc( 100% / 7 );
-  padding-top: 20px;
+  width: calc( 100% / 6 );
+  padding: 20px 20px 0 0;
+  /* margin-right: 20px; */
 }
 
 .ms_main_playlists .flex-item img {
@@ -295,14 +296,6 @@ section {
   color: #62646a;
 }
 
-.ms_main_playlists .flex-container.ms_main_two {
-  justify-content: flex-start;
-}
-
-.ms_main_playlists .flex-container.ms_main_two .flex-item {
-  margin-right: 35px;
-}
-
 .ms_main_playlists > .ms_artist {
   padding-left: 20px;
 }
@@ -313,6 +306,18 @@ section {
 /* FINE MAIN */
 
 /* Inizio Media Query Main */
+@media screen and (max-width: 1200px) {
+  .ms_main_playlists .flex-item {
+    width: calc( 100% / 4 );
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ms_main_playlists .flex-item {
+    width: calc( 100% / 2 );
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     width: 60px;
