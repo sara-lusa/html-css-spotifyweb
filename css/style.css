@@ -80,7 +80,7 @@ nav li {
 .ms_list {
   overflow-y: auto;
   min-height: 60px;
-  height: calc( 100% - 143px );
+  height: calc( 100% - 313px );
   text-transform: capitalize;
 }
 
@@ -103,8 +103,11 @@ nav li {
 .ms_name {
   width: 90%;
   position: absolute;
-  bottom: 7px;
+  bottom: 0px;
   left: 20px;
+  background-color: black;
+  height: 90px;
+  padding: 10px 0;
 }
 
 .ms_name img {
@@ -129,6 +132,7 @@ hr {
   margin-bottom: 15px;
 }
 
+/* Logos */
 .ms_logos {
   text-align: center;
 }
@@ -150,6 +154,7 @@ hr {
   width: 40px;
   height: 40px;
 }
+
 /* Section-Main */
 section {
   height: 100%;
