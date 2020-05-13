@@ -68,7 +68,7 @@ nav li {
   height: 100%;
 }
 
-.flex-item {
+nav .flex-item {
   flex-shrink: 0;
 }
 
@@ -200,7 +200,7 @@ section {
   float: left;
 }
 
-
+/* Fixed-Bar */
 .ms_fixed_bar {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
@@ -227,10 +227,21 @@ section {
   transform: scale(1.5);
 } */
 
+/* Main-Content */
 .ms_main_content {
-  font-size: 40px;
+  width: 100%;
   height: 100%;
   overflow: scroll;
+}
+
+.ms_main_menu .flex-container {
+  width: 100%;
+  flex-direction: row;
+  margin-top: 85px;
+  justify-content: center;
+  color: #6d6d6d;
+  text-transform: uppercase;
+  flex-wrap: wrap;
 }
 /* FINE MAIN */
 
