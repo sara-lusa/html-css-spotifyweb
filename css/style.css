@@ -18,6 +18,7 @@ font-family: 'Roboto', sans-serif;
 
 ul {
   list-style-type: none;
+  padding-left: 20px;
 }
 
 a {
@@ -26,6 +27,10 @@ a {
 
 .flex-container {
   display: flex;
+}
+
+.ms_white {
+  color: white;
 }
 /* FINE REGOLE GENERALI */
 
@@ -45,14 +50,54 @@ nav {
   background-color: black;
   float: left;
   position: relative;
-  color: white;
+  color: #6d6d6d;
   overflow-y: hidden;
+}
+
+.ms_logo {
+  padding: 15px;
+}
+
+.ms_logo img {
+  width: 60%;
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+nav li a img {
+  width: 10%;
+}
+
+nav li {
+  padding-bottom: 15px;
+  font-size: 13px;
 }
 
 .ms_list {
   overflow-y: auto;
   min-height: 60px;
   height: calc( 100% - 143px );
+  text-transform: capitalize;
+}
+
+.ms_list li:first-child {
+  font-size: 15px;
+  line-height: 35px;
+}
+
+.ms_plus_sign {
+  font-size: 18px;
+  margin-right: 5px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  background-color: lightgrey;
+  color: black;
 }
 
 .ms_name {
@@ -63,6 +108,9 @@ nav {
   height: 50px;
 }
 
+.ms_name a img:first-child {
+  width: 5%;
+}
 /* Section-Main */
 section {
   height: 100%;
@@ -81,7 +129,22 @@ section {
   top: 0;
   right: 0;
   text-align: right;
+  line-height: 80px;
+  padding-right: 30px;
 }
+
+.ms_fixed_bar a {
+  padding: 10px 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 13px;
+  /* display: inline-block; */
+}
+
+/* .ms_fixed_bar a:hover {
+  transform: scale(1.5);
+} */
 
 .ms_main_content {
   font-size: 40px;
