@@ -40,6 +40,39 @@ a:hover {
 /* FINE REGOLE GENERALI */
 
 /* COMPONENTI */
+/* Hover-Playlists */
+.ms_hover_playlists {
+  width: 100%;
+  position: relative;
+}
+
+.ms_hover_playlists_i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ms_main_two:last-child .ms_hover_playlists_i {
+  border-radius: 50%;
+}
+
+.ms_hover_playlists i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.ms_main_playlists .flex-item:hover .ms_hover_playlists_i {
+  z-index: 1;
+}
 /* FINE COMPONENTI */
 
 /* MAIN */
