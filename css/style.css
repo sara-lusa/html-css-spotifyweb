@@ -355,4 +355,26 @@ footer {
   background-color: #282828;
 }
 
+footer .flex-container {
+  height: 100%;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+}
+
+footer .flex-item {
+
+}
+
+footer img {
+  height: 50px;
+
+}
+
+footer h5, footer p {
+  display: inline-block;
+}
+
 /* FINE FOOTER */
