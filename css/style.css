@@ -527,6 +527,18 @@ footer .ms_volume i {
   top: -5px;
   right: -13px;
 }
-
-
 /* FINE FOOTER */
+
+/* Inizio Media Query Footer */
+@media screen and (max-width: 768px) {
+
+  footer .ms_icons {
+    width: 10%;
+    padding-left: 7px;
+  }
+
+  footer .ms_player .ms_icons_player i {
+    padding: 0 5px;
+  }
+}
+/* Fine Media Query Footer */
