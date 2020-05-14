@@ -184,7 +184,7 @@ h4 {
 }
 
 .ms_avatar a img {
-  width: 5%;
+  width: 7%;
 }
 
 .ms_avatar > img {
@@ -196,9 +196,9 @@ h4 {
 }
 
 hr {
-  color: #6d6d6d;
   margin-top: 10px;
   margin-bottom: 15px;
+  border-top: 1px solid #6d6d6d;
 }
 
 /* Logos */
