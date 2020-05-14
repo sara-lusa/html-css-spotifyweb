@@ -43,7 +43,7 @@ a:hover {
 
 /* MAIN */
 main, footer {
-  min-width: 500px;
+  min-width: 550px;
 }
 
 main {
@@ -361,7 +361,6 @@ footer .flex-container {
   color: white;
   align-items: center;
   justify-content: space-between;
-
 }
 
 footer .flex-item {
@@ -370,8 +369,8 @@ footer .flex-item {
 
 footer .flex-item.ms_song,
 footer .flex-item.ms_volume {
-  flex-shrink: 0;
-  /* width: 30%; */
+  flex-shrink: 1;
+  flex-basis: 30%;
 }
 
 footer .flex-item.ms_song {
@@ -383,19 +382,19 @@ footer img {
   vertical-align: middle;
 }
 
-footer .flex-item.ms_song > div {
+footer .flex-item .ms_song1 > div {
   display: inline-block;
   /* line-height: 50px; */
 }
 
+.ms_song1 {
+  height: 50px;
+
+}
 footer .ms_infos h5,
 footer .ms_infos p {
   margin: 0;
-  /* padding-bottom: 5px; */
-}
-
-footer .ms_infos {
-
+  display: inline-block;
 }
 
 footer .ms_infos p,
@@ -408,54 +407,56 @@ footer .ms_infos p {
 }
 
 footer .ms_icons {
-  padding-left: 20px;
+  width: 20%;
+  text-align: right;
 }
 
 footer .flex-item.ms_player {
   flex-shrink: 1;
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 
 footer .ms_player {
   text-align: center;
 }
 
-footer .ms_player i {
-  padding: 0 10px;
+
+footer .ms_player .ms_icons_player i {
+  width: calc( 300px / 8 );
 }
 
 footer .ms_player .fa-play-circle {
-  padding: 0 12px;
+  /* padding: 0 12px; */
   font-size: 28px;
   vertical-align: middle;
 }
 
 footer .ms_player .ms_player_line {
-  width: 250px;
+  width: 40%;
   height: 4px;
   border-radius: 5px;
   background-color: #595959;
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
   position: relative;
 }
 
 .ms_player_line::before {
   content: '0.25';
   position: absolute;
-  left: -59px;
+  left: -40%;
   top: -9px;
 }
 
 .ms_player_line::after {
   content: '4.35';
   position: absolute;
-  right: -59px;
+  right: -40%;
   top: -9px;
 }
 
 .ms_player_listened {
   height: 100%;
-  width: 100px;
+  width: 20%;
   border-radius: 5px;
   background-color: #c1c1c1;
 }
@@ -484,13 +485,17 @@ footer .flex-item.ms_volume {
   margin-right: 20px;
 }
 
+footer .ms_volume1 {
+  text-align: right;
+}
+
 footer .ms_volume i {
   padding-right: 10px;
   vertical-align: sub;
 }
 
 .ms_volume_line {
-  width: 100px;
+  width: 30%;
   height: 4px;
   border-radius: 5px;
   background-color: #595959;
@@ -499,7 +504,7 @@ footer .ms_volume i {
 
 .ms_volume_up {
   height: 100%;
-  width: 20px;
+  width: 20%;
   border-radius: 5px;
   background-color: #c1c1c1;
 }
