@@ -360,7 +360,7 @@ footer .flex-container {
   flex-direction: row;
   color: white;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
 }
 
@@ -368,13 +368,56 @@ footer .flex-item {
 
 }
 
+footer .flex-item.ms_song,
+footer .flex-item.ms_volume {
+  flex-shrink: 0;
+  /* width: 30%; */
+}
+
+footer .flex-item.ms_player {
+  flex-shrink: 1;
+  /* flex-grow: 1; */
+}
+
+footer .flex-item.ms_song {
+  margin-left: 20px;
+}
+
 footer img {
   height: 50px;
+  vertical-align: middle;
+}
+
+footer .flex-item.ms_song > div {
+  display: inline-block;
+  /* line-height: 50px; */
+}
+
+footer .ms_infos h5,
+footer .ms_infos p {
+  margin: 0;
+  /* padding-bottom: 5px; */
+}
+
+footer .ms_infos {
 
 }
 
-footer h5, footer p {
-  display: inline-block;
+footer .ms_infos p,
+footer .ms_icons {
+  color: #797979;
+}
+
+footer .ms_infos p {
+  font-size: 12px;
+}
+
+footer .ms_icons {
+  padding-left: 20px;
+}
+
+footer .flex-item.ms_volume {
+  margin-right: 20px;
 }
 
 /* FINE FOOTER */
