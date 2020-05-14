@@ -363,8 +363,10 @@ footer .flex-container {
   justify-content: space-between;
 }
 
-footer .flex-item {
-
+footer .flex-container.ms_song1 {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 footer .flex-item.ms_song,
@@ -373,24 +375,16 @@ footer .flex-item.ms_volume {
   flex-basis: 30%;
 }
 
+/* Song */
 footer .flex-item.ms_song {
   margin-left: 20px;
 }
 
 footer img {
   height: 50px;
-  vertical-align: middle;
+  padding-right: 10px;
 }
 
-footer .flex-item .ms_song1 > div {
-  display: inline-block;
-  /* line-height: 50px; */
-}
-
-.ms_song1 {
-  height: 50px;
-
-}
 footer .ms_infos h5,
 footer .ms_infos p {
   margin: 0;
@@ -411,22 +405,24 @@ footer .ms_icons {
   text-align: right;
 }
 
+/* Player */
 footer .flex-item.ms_player {
   flex-shrink: 1;
   flex-grow: 1;
 }
 
-footer .ms_player {
-  text-align: center;
+footer .ms_player .flex-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
 footer .ms_player .ms_icons_player i {
-  width: calc( 300px / 8 );
+  padding: 0 10px;
 }
 
 footer .ms_player .fa-play-circle {
-  /* padding: 0 12px; */
   font-size: 28px;
   vertical-align: middle;
 }
@@ -481,12 +477,15 @@ footer .ms_player .ms_player_line {
   cursor: pointer;
 }
 
+/* Volume */
 footer .flex-item.ms_volume {
   margin-right: 20px;
 }
 
-footer .ms_volume1 {
-  text-align: right;
+footer .ms_volume1.flex-container {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 footer .ms_volume i {
