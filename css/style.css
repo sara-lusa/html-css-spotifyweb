@@ -414,6 +414,10 @@ footer img {
   padding-right: 10px;
 }
 
+footer .ms_infos {
+  line-height: normal;
+}
+
 footer .ms_infos h5,
 footer .ms_infos p {
   margin: 0;
@@ -437,6 +441,10 @@ footer .ms_infos a {
 footer .ms_icons {
   width: 20%;
   text-align: right;
+}
+
+footer .ms_icons i:first-child {
+  padding-right: 5px;
 }
 
 /* Player */
@@ -477,15 +485,17 @@ footer .ms_player .ms_player_line {
 .ms_player_line::before {
   content: '0.25';
   position: absolute;
-  left: -25%;
-  top: -9px;
+  left: -20%;
+  top: -6px;
+  font-size: 12px;
 }
 
 .ms_player_line::after {
   content: '4.35';
   position: absolute;
-  right: -25%;
-  top: -9px;
+  right: -20%;
+  top: -6px;
+  font-size: 12px;
 }
 
 .ms_player_listened {
