@@ -1,16 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-/* .clearfix {
-  content: '';
-  display: table;
-  clear: both;
-} */
-
-
 /* REGOLE GENERALI */
 body {
 font-family: 'Roboto', sans-serif;
@@ -30,6 +17,7 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
 .flex-container {
   display: flex;
 }
@@ -471,6 +459,10 @@ footer .ms_player .ms_icons_player i {
 footer .ms_player .fa-play-circle {
   font-size: 28px;
   vertical-align: middle;
+}
+
+.ms_player .fa-play-circle:hover {
+  transform: scale(1.1);
 }
 
 footer .ms_player .ms_player_line {
