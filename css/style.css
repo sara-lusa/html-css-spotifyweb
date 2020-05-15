@@ -414,36 +414,36 @@ footer img {
   padding-right: 10px;
 }
 
-footer .ms_infos {
+footer .ms_info_song {
   line-height: normal;
 }
 
-footer .ms_infos h5,
-footer .ms_infos p {
+footer .ms_info_song h5,
+footer .ms_info_song p {
   margin: 0;
   display: inline-block;
 }
 
-footer .ms_infos a,
-footer .ms_icons {
+footer .ms_info_song a,
+footer .ms_icons_song {
   color: #797979;
 }
 
-footer .ms_infos a {
+footer .ms_info_song a {
   font-size: 12px;
 }
 
-.ms_infos a p:hover {
+.ms_info_song a p:hover {
   color: white;
   text-decoration: underline;
 }
 
-footer .ms_icons {
+footer .ms_icons_song {
   width: 20%;
   text-align: right;
 }
 
-footer .ms_icons i:first-child {
+footer .ms_icons_song i:first-child {
   padding-right: 5px;
 }
 
