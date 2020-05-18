@@ -181,7 +181,7 @@
             </ul>
 
             <!-- Creato per Jane Doe -->
-            <h2>Creato per Jane Doe</h2>
+            <h2 id="created-for">Creato per Jane Doe</h2>
             <p class="ms_artist">Più ascolti, più accurati saranno i suggerimenti.</p>
             <ul class="flex-container ms_main_two">
               <li class="flex-item"><a href="#">
@@ -206,7 +206,7 @@
             </ul>
 
             <!-- Artisti più popolari -->
-            <h2>Artisti più popolari</h2>
+            <h2 id="popular-artist">Artisti più popolari</h2>
             <p class="ms_artist">Più ascolti, più accurati saranno i suggerimenti.</p>
             <ul class="flex-container ms_main_two">
               <li class="flex-item"><a href="#">
@@ -302,6 +302,11 @@
       </div>
     </footer>
     <!-- Fine Footer -->
+
+    <script type="text/javascript">
+      document.getElementById('popular-artist').innerHTML = 'Most Popular Artists'
+      document.getElementById('created-for').innerHTML = 'Created for Jane Doe';
+    </script>
 
   </body>
 </html>

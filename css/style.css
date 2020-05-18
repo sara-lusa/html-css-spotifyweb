@@ -243,6 +243,7 @@ section {
   top: 0;
   right: 0;
   padding-right: 30px;
+  z-index: 10;
 }
 
 .ms_fixed_bar.flex-container {
